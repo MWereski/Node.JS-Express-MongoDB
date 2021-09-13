@@ -1,6 +1,8 @@
+
 const http = require('http');
 
 const server = http.createServer((request, response) => {
+    console.log(request.url);
     response.writeHead(200, "OK", {'Content-Type': 'text/html'})
     response.end('<h1>Its Working!!!</h1>')
 });
